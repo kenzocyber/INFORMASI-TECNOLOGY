@@ -1,107 +1,81 @@
-# INFORMASI-TECNOLOGY
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Payakumbuh Cyber | PYK</title>
+  <title>PYK CYBER | LEADERS</title>
   <style>
-    * {
+    html, body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
+      height: 100%;
+      background: #000;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #000000);
-      background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
       color: white;
-      line-height: 1.6;
+      overflow: hidden;
     }
-
-    @keyframes gradient {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      z-index: -1;
     }
-
-    header {
+    .container {
       text-align: center;
-      padding: 70px 20px 40px;
-      background-color: rgba(0,0,0,0.5);
+      position: relative;
+      top: 30%;
+      transform: translateY(-30%);
     }
-
-    header h1 {
-      font-size: 3.5em;
-      color: #00ffff;
-      text-transform: uppercase;
-      letter-spacing: 3px;
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
     }
-
-    .tagline {
-      font-size: 1.1em;
-      color: #ccc;
-      margin-top: 10px;
-    }
-
-    nav {
-      background: rgba(0,0,0,0.7);
-      text-align: center;
-      padding: 12px 0;
-    }
-
-    nav a {
+    h2 {
+      font-size: 1.5em;
       color: #0ff;
-      margin: 0 18px;
-      text-decoration: none;
-      font-weight: bold;
+      margin-bottom: 1em;
+    }
+    p {
+      color: #ccc;
+    }
+    .contact {
+      margin-top: 2em;
       font-size: 1em;
     }
-
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 25px;
-      background: rgba(0,0,0,0.4);
-      border-radius: 10px;
-    }
-
-    section h2 {
-      border-left: 4px solid #0ff;
-      padding-left: 15px;
-      margin-bottom: 20px;
+    .contact a {
       color: #0ff;
-    }
-
-    .skill-item {
-      padding: 10px 0;
-      border-bottom: 1px solid #333;
-    }
-
-    .skill-item:last-child {
-      border-bottom: none;
-    }
-
-    footer {
-      text-align: center;
-      color: #888;
-      padding: 30px 10px;
-      font-size: 0.9em;
-    }
-
-    a {
-      color: #00ffff;
       text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
+  <div id="particles-js"></div>
+  <div class="container">
+    <h1>PYK CYBER</h1>
+    <h2>LEADERS OF ETHICAL HACKING</h2>
+    <p>Website resmi tim hacker Payakumbuh Cyber</p>
+    <div class="contact">
+      <a href="mailto:pykcyber@gmail.com">📧 pykcyber@gmail.com</a>
+      <a href="https://wa.me/6283143490913">📱 WhatsApp</a>
+    </div>
+  </div>
 
-  <header>
-    <h1>Payakumbuh
+  <!-- particles.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#00ffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: { enable: true, distance: 150, color: "#0ff", opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 2 }
+      }
+    });
+  </script>
+</body>
+</html>
